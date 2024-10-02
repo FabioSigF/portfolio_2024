@@ -30,9 +30,10 @@
     <header id="header" class="mt-4 headroom">
       <div class="container">
         <ul
-          class="flex items-center justify-between px-3 py-2 rounded-[50px] bg-black w-full"
+          class="flex items-center justify-between px-3 py-2 rounded-[50px] bg-black w-full transition"
+          id="menuHeader"
         >
-          <li>
+          <li class="hidden md:block">
             <a
               href="#home"
               class="scroll-link px-8 py-4 bg-primary text-text_light font-semibold rounded-[60px]"
@@ -40,7 +41,7 @@
               Início
             </a>
           </li>
-          <li>
+          <li class="hidden md:block">
             <a
               href="#about"
               class="scroll-link px-8 py-4 text-text_light rounded-[60px] hover:text-primary transition"
@@ -48,7 +49,7 @@
               Sobre
             </a>
           </li>
-          <li>
+          <li class="hidden md:block">
             <a
               href="#habilities"
               class="scroll-link px-8 py-4 text-text_light rounded-[60px] hover:text-primary transition"
@@ -58,14 +59,76 @@
           </li>
 
           <!-- Logo -->
-          <a href="#home" class="flex flex-col">
+          <a href="#home" class="flex flex-col pl-4 md:pl-0">
             <h1 class="font-semibold text-2xl text-text_light">SIGNORINI</h1>
             <span class="text-xs tracking-widest text-text_light"
               >DEVELOPER</span
             >
           </a>
 
-          <li>
+          <!-- Hamburger Mobile -->
+
+          <button
+            class="text-4xl text-primary md:hidden mr-4"
+            id="btn_menu_mobile"
+          >
+            <div></div>
+          </button>
+
+          <!-- Menu List Mobile -->
+          <div
+            class="w-[100vw] absolute top-[64px] left-0 right-0 gap-8 z-40 md:hidden container m-auto"
+            id="menuMobile"
+          >
+            <div class="bg-black rounded-b-[50px]">
+              <ul class="flex flex-col justify-center items-center w-full py-8">
+                <li>
+                  <a
+                    href="#home"
+                    class="menuMobile_link uppercase text-text_light hover:text-primary_hover text-lg font-medium py-2 block"
+                    >Início</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="menuMobile_link uppercase text-text_light hover:text-primary_hover text-lg font-medium py-2 block"
+                    >Sobre</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#habilities"
+                    class="menuMobile_link uppercase text-text_light hover:text-primary_hover text-lg font-medium py-2 block"
+                    >Habilidades</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="menuMobile_link uppercase text-text_light hover:text-primary_hover text-lg font-medium py-2 block"
+                    >Portfólio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="menuMobile_link uppercase text-text_light hover:text-primary_hover text-lg font-medium py-2 block"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="menuMobile_link uppercase text-text_light hover:text-primary_hover text-lg font-medium py-2 block"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <li class="hidden md:block">
             <a
               href="#portfolio"
               class="scroll-link px-8 py-4 text-text_light rounded-[60px] hover:text-primary transition"
@@ -74,14 +137,14 @@
             </a>
           </li>
           <li
-            class="px-8 py-4 text-text_light rounded-[60px] transition flex items-center"
+            class="hidden md:flex px-8 py-4 text-text_light rounded-[60px] transition items-center"
           >
             <a
               href="#contact"
               class="scroll-link pr-8 border-r border-border mr-8 hover:text-primary transition"
               >Contato</a
             >
-            <ul class="flex items-center gap-8">
+            <ul class="flex items-center gap-2 lg:gap-8">
               <li>
                 <a
                   target="_blank"
@@ -146,36 +209,44 @@
     </header>
     <main>
       <section id="home" class="container overflow-hidden">
-        <div class="flex flex-col items-center mt-8">
-          <div class="flex flex-col items-center font-semibold">
-            <h1 class="text-primary text-[5rem]" data-aos="fade-right">
+        <div class="flex flex-col items-center md:mt-8">
+          <div class="flex flex-col gap-8 items-center font-semibold">
+            <h1
+              class="text-primary text-[3rem] max-md:text-center sm:max-md:pt-4 sm:max-md:pb-2 sm:text-[5rem] max-md:leading-[3.5rem]"
+              data-aos="fade-right"
+            >
               Fábio Signorini
             </h1>
-            <h2 class="-mt-6 text-[5rem]" data-aos="fade-left">
+            <h2
+              class="-mt-6 text-2xl xs:text-3xl sm:text-5xl max-md:text-center md:text-[5rem] max-md:leading-[2rem]"
+              data-aos="fade-left"
+            >
               FullStack Developer
             </h2>
           </div>
           <div
-            class="-mt-14 relative w-full flex justify-center"
+            class="relative w-full flex justify-center sm:-mt-[2rem]"
             data-aos="zoom-in"
           >
             <img src="./src/img/fabio.png" alt="Fabio Signorini" class="z-10" />
-            <div class="absolute bottom-0 w-full flex justify-center">
+            <div
+              class="absolute -bottom-5 md:bottom-0 w-full flex justify-center"
+            >
               <div class="moon">
                 <div class="wave"></div>
               </div>
               <div
-                class="flex flex-col items-start gap-4 absolute top-0 left-0"
+                class="flex flex-col items-start gap-4 absolute top-0 left-0 max-sm:hidden"
               >
                 <img src="./src/img/quote-up.png" alt="" />
-                <p class="max-w-[337px] text-xl">
+                <p class="max-w-[200px] md:max-w-[337px] text-lg md:text-xl">
                   Sou versado no desenvolvimento com
                   <strong>Java Spring Framework</strong>, experiente em
                   construir sites com <strong>ReactJS</strong> e metódico em
                   <strong>Desenvolvimento Limpo</strong>.
                 </p>
               </div>
-              <div class="absolute top-0 right-0 -mt-8 mr-4">
+              <div class="absolute top-0 right-0 -mt-8 mr-4 max-sm:hidden">
                 <img src="./src/img/points.png" alt="" />
               </div>
               <div class="absolute z-20 bottom-10">
@@ -213,8 +284,11 @@
       <section id="about">
         <div class="pt-24 pb-[320px]">
           <div class="container overflow-hidden">
-            <div class="grid grid-cols-2 items-center" data-aos="zoom-out">
-              <h2 class="text-text_light">
+            <div
+              class="md:grid md:grid-cols-2 md:items-center"
+              data-aos="zoom-out"
+            >
+              <h2 class="text-text_light max-md:pb-8">
                 Sobre <span class="text-primary">Mim</span>
               </h2>
               <div class="flex flex-col gap-8 text-text_light text-lg">
@@ -233,7 +307,10 @@
         </div>
       </section>
       <section id="habilities" class="flex flex-col items-center relative">
-        <div class="absolute -top-[210px] z-20 w-full" data-aos="fade-up">
+        <div
+          class="absolute -top-[260px] xs:-top-[210px] z-20 w-full"
+          data-aos="fade-up"
+        >
           <div class="flex flex-col items-center">
             <h2 class="text-text_light mb-16 text-center">
               Minhas <span class="text-primary">Habilidades</span>
@@ -378,7 +455,7 @@
           </div>
         </div>
         <div class="container" data-aos="fade-up">
-          <div class="flex flex-col gap-8 mt-[134px] text-lg">
+          <div class="flex flex-col gap-8 mt-[180px] xs:mt-[134px] text-lg">
             <h3 class="font-bold text-2xl text-center">
               “As <strong class="text-primary">soluções</strong> são criadas a
               partir das demandas”
@@ -423,16 +500,22 @@
 
             <div class="owl-carousel owl-theme portfolio_carousel">
               <div class="w-full">
-                <div class="grid grid-cols-2 gap-6 h-[370px] w-full mb-20">
+                <div
+                  class="sm:grid sm:grid-cols-2 max-sm:flex max-sm:flex-col gap-6 sm:h-[370px] w-full mb-8 sm:mb-20"
+                >
                   <div
                     class="portfolio_one_front rounded-[20px] relative overflow-hidden w-full"
                   >
-                    <div class="portfolio_bg">
+                    <div class="portfolio_bg max-sm:h-[200px]">
                       <div class="portfolio_bg_content">
-                        <h3 class="text-white font-semibold text-2xl">
+                        <h3
+                          class="text-white font-semibold text-xs sm:text-base md:text-2xl"
+                        >
                           Página Inicial do Dashboard
                         </h3>
-                        <h2 class="text-white font-semibold text-5xl">
+                        <h2
+                          class="text-white font-semibold text-base sm:text-xl md:text-5xl"
+                        >
                           Loja de Uniformes - Admin
                         </h2>
                       </div>
@@ -441,12 +524,16 @@
                   <div
                     class="portfolio_one_back rounded-[20px] relative overflow-hidden w-full"
                   >
-                    <div class="portfolio_bg">
+                    <div class="portfolio_bg max-sm:h-[200px]">
                       <div class="portfolio_bg_content">
-                        <h3 class="text-white font-semibold text-2xl">
+                        <h3
+                          class="text-white font-semibold text-xs sm:text-base md:text-2xl"
+                        >
                           Página de Cadastro de Empresa
                         </h3>
-                        <h2 class="text-white font-semibold text-5xl">
+                        <h2
+                          class="text-white font-semibold text-base sm:text-xl md:text-5xl"
+                        >
                           Loja de Uniformes - Admin
                         </h2>
                       </div>
@@ -454,7 +541,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col gap-8">
-                  <ul class="flex items-center justify-center gap-4">
+                  <ul class="flex flex-wrap items-center justify-center gap-4">
                     <li
                       class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
                     >
@@ -482,48 +569,54 @@
                     </li>
                   </ul>
                   <div class="flex flex-col items-center gap-8">
-                    <div class="flex gap-4 items-center justify-center">
-                      <h3 class="text-4xl text-text_dark font-semibold">
+                    <div
+                      class="flex max-sm:flex-col gap-4 items-center justify-center"
+                    >
+                      <h3
+                        class="text-2xl sm:text-4xl text-text_dark font-semibold"
+                      >
                         Loja de Uniformes - Dashboard Admin
                       </h3>
-                      <a
-                      target="_blank"
-                      href="https://github.com/FabioSigF/admin_loja_uniformes"
-                        class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="0.97em"
-                          height="1em"
-                          viewBox="0 0 496 512"
+                      <div class="flex items-center gap-4">
+                        <a
+                          target="_blank"
+                          href="https://github.com/FabioSigF/admin_loja_uniformes"
+                          class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
                         >
-                          <path
-                            fill="currentColor"
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                      target="_blank"
-                      href="#!"
-                        class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="1.5rem"
-                          height="1.5rem"
-                          viewBox="0 0 24 24"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="0.97em"
+                            height="1em"
+                            viewBox="0 0 496 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
+                            />
+                          </svg>
+                        </a>
+                        <a
+                          target="_blank"
+                          href="#!"
+                          class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
                         >
-                          <path
-                            fill="currentColor"
-                            fill-rule="evenodd"
-                            d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                    <p class="text-center w-[60%] text-lg">
+                    <p class="text-center md:w-[60%] text-lg">
                       Esse é o projeto de um dashboard administrativo para uma
                       Loja de Uniformes. Ela foi criada para atender a demanda
                       da
@@ -551,16 +644,22 @@
                 </div>
               </div>
               <div class="w-full">
-                <div class="grid grid-cols-2 gap-6 h-[370px] w-full mb-20">
+                <div
+                  class="sm:grid sm:grid-cols-2 max-sm:flex max-sm:flex-col gap-6 sm:h-[370px] w-full mb-8 sm:mb-20"
+                >
                   <div
                     class="portfolio_two_front rounded-[20px] relative overflow-hidden w-full"
                   >
-                    <div class="portfolio_bg">
+                    <div class="portfolio_bg max-sm:h-[200px]">
                       <div class="portfolio_bg_content">
-                        <h3 class="text-white font-semibold text-2xl">
+                        <h3
+                          class="text-white font-semibold text-xs sm:text-base md:text-2xl"
+                        >
                           Página Inicial
                         </h3>
-                        <h2 class="text-white font-semibold text-5xl">
+                        <h2
+                          class="text-white font-semibold text-base sm:text-xl md:text-5xl"
+                        >
                           Auto Club - Since 2023
                         </h2>
                       </div>
@@ -569,12 +668,16 @@
                   <div
                     class="portfolio_two_back rounded-[20px] relative overflow-hidden w-full"
                   >
-                    <div class="portfolio_bg">
+                    <div class="portfolio_bg max-sm:h-[200px]">
                       <div class="portfolio_bg_content">
-                        <h3 class="text-white font-semibold text-2xl">
+                        <h3
+                          class="text-white font-semibold text-xs sm:text-base md:text-2xl"
+                        >
                           Página do Veículo
                         </h3>
-                        <h2 class="text-white font-semibold text-5xl">
+                        <h2
+                          class="text-white font-semibold text-base sm:text-xl md:text-5xl"
+                        >
                           Auto Club - Since 2023
                         </h2>
                       </div>
@@ -582,7 +685,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col gap-8">
-                  <ul class="flex items-center justify-center gap-4">
+                  <ul class="flex flex-wrap items-center justify-center gap-4">
                     <li
                       class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
                     >
@@ -610,48 +713,54 @@
                     </li>
                   </ul>
                   <div class="flex flex-col items-center gap-8">
-                    <div class="flex gap-4 items-center justify-center">
-                      <h3 class="text-4xl text-text_dark font-semibold">
+                    <div
+                      class="flex max-sm:flex-col gap-4 items-center justify-center"
+                    >
+                      <h3
+                        class="text-2xl sm:text-4xl text-text_dark font-semibold"
+                      >
                         Auto Cars - Aluguel e Venda de Carros
                       </h3>
-                      <a
-                      target="_blank"
-                      href="https://github.com/FabioSigF/carshopping"
-                        class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="0.97em"
-                          height="1em"
-                          viewBox="0 0 496 512"
+                      <div class="flex items-center gap-4">
+                        <a
+                          target="_blank"
+                          href="https://github.com/FabioSigF/carshopping"
+                          class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
                         >
-                          <path
-                            fill="currentColor"
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                      target="_blank"
-                      href="https://carshopping.vercel.app/?vercelToolbarCode=XqbEx3TGphqyKo4"
-                        class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="1.5rem"
-                          height="1.5rem"
-                          viewBox="0 0 24 24"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="0.97em"
+                            height="1em"
+                            viewBox="0 0 496 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
+                            />
+                          </svg>
+                        </a>
+                        <a
+                          target="_blank"
+                          href="https://carshopping.vercel.app/?vercelToolbarCode=XqbEx3TGphqyKo4"
+                          class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
                         >
-                          <path
-                            fill="currentColor"
-                            fill-rule="evenodd"
-                            d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                    <p class="text-center w-[60%] text-lg">
+                    <p class="text-center md:w-[60%] text-lg">
                       O projeto Auto Club é uma aplicação de aluguel e venda de
                       carros, onde o usuário pode visualizar os carros
                       disponíveis, alugar e comprar. <br />
@@ -664,16 +773,22 @@
                 </div>
               </div>
               <div class="w-full">
-                <div class="grid grid-cols-2 gap-6 h-[370px] w-full mb-20">
+                <div
+                  class="sm:grid sm:grid-cols-2 max-sm:flex max-sm:flex-col gap-6 sm:h-[370px] w-full mb-8 sm:mb-20"
+                >
                   <div
                     class="portfolio_three_front rounded-[20px] relative overflow-hidden w-full"
                   >
-                    <div class="portfolio_bg">
+                    <div class="portfolio_bg max-sm:h-[200px]">
                       <div class="portfolio_bg_content">
-                        <h3 class="text-white font-semibold text-2xl">
+                        <h3
+                          class="text-white font-semibold text-xs sm:text-base md:text-2xl"
+                        >
                           Página de Artigo
                         </h3>
-                        <h2 class="text-white font-semibold text-5xl">
+                        <h2
+                          class="text-white font-semibold text-base sm:text-xl md:text-5xl"
+                        >
                           Behold Travel
                         </h2>
                       </div>
@@ -682,12 +797,16 @@
                   <div
                     class="portfolio_three_back rounded-[20px] relative overflow-hidden w-full"
                   >
-                    <div class="portfolio_bg">
+                    <div class="portfolio_bg max-sm:h-[200px]">
                       <div class="portfolio_bg_content">
-                        <h3 class="text-white font-semibold text-2xl">
+                        <h3
+                          class="text-white font-semibold text-xs sm:text-base md:text-2xl"
+                        >
                           Página de Criação de Artigo
                         </h3>
-                        <h2 class="text-white font-semibold text-5xl">
+                        <h2
+                          class="text-white font-semibold text-base sm:text-xl md:text-5xl"
+                        >
                           Behold Travel
                         </h2>
                       </div>
@@ -695,7 +814,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col gap-8">
-                  <ul class="flex items-center justify-center gap-4">
+                  <ul class="flex flex-wrap items-center justify-center gap-4">
                     <li
                       class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
                     >
@@ -723,48 +842,54 @@
                     </li>
                   </ul>
                   <div class="flex flex-col items-center gap-8">
-                    <div class="flex gap-4 items-center justify-center">
-                      <h3 class="text-4xl text-text_dark font-semibold">
+                    <div
+                      class="flex max-sm:flex-col gap-4 items-center justify-center"
+                    >
+                      <h3
+                        class="text-2xl sm:text-4xl text-text_dark font-semibold"
+                      >
                         Behold Travel - Blog de Viagens
                       </h3>
-                      <a
-                      target="_blank"
-                      href="https://github.com/FabioSigF/travelblog"
-                        class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="0.97em"
-                          height="1em"
-                          viewBox="0 0 496 512"
+                      <div class="flex items-center gap-4">
+                        <a
+                          target="_blank"
+                          href="https://github.com/FabioSigF/travelblog"
+                          class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
                         >
-                          <path
-                            fill="currentColor"
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                      target="_blank"
-                      href="https://travelblog-lyart.vercel.app/?vercelToolbarCode=akk8reYXqAIKsH4"
-                        class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="1.5rem"
-                          height="1.5rem"
-                          viewBox="0 0 24 24"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="0.97em"
+                            height="1em"
+                            viewBox="0 0 496 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
+                            />
+                          </svg>
+                        </a>
+                        <a
+                          target="_blank"
+                          href="https://travelblog-lyart.vercel.app/?vercelToolbarCode=akk8reYXqAIKsH4"
+                          class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
                         >
-                          <path
-                            fill="currentColor"
-                            fill-rule="evenodd"
-                            d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </a>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1.5rem"
+                            height="1.5rem"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                    <p class="text-center w-[60%] text-lg">
+                    <p class="text-center md:w-[60%] text-lg">
                       Behold Travel é um blog onde qualquer pessoa pode criar
                       artigos descrevendo sobre suas aventuras! O projeto foi
                       desenvolvido em <strong>ReactJS</strong> e
@@ -1066,7 +1191,9 @@
       <section id="blog" class="py-24 overflow-hidden">
         <div class="container" data-aos="fade-left">
           <div class="">
-            <div class="flex items-center justify-between">
+            <div
+              class="flex max-sm:flex-wrap max-sm:text-center items-center justify-center max-sm:gap-4 sm:justify-between"
+            >
               <h2 class="text-text_dark">
                 Também escrevo alguns
                 <span class="text-primary">Artigos</span>
@@ -1074,12 +1201,14 @@
               <a
                 href="https://medium.com/@fabiosignorini19"
                 target="_blank"
-                class="rounded-[60px] bg-primary hover:bg-text_dark border border-primary hover:border-white text-white font-medium text-xl px-6 py-3"
+                class="rounded-[60px] bg-primary hover:bg-text_dark border border-primary hover:border-white text-white font-medium text-xl px-6 py-3 text-nowrap"
               >
                 Ver Todos
               </a>
             </div>
-            <ul class="grid grid-cols-3 gap-12 mt-8">
+            <ul
+              class="flex flex-col max-sm:items-center max-sm:justify-center gap-12 sm:gap-4 sm:grid sm:grid-cols-3 md:gap-12 mt-8"
+            >
               <li>
                 <article class="flex flex-col gap-4">
                   <div class="relative">
@@ -1090,7 +1219,7 @@
                     <a
                       target="_blank"
                       href="https://medium.com/@fabiosignorini19/modelo-e-diagrama-entidade-relacionamento-mer-e-der-de-forma-f%C3%A1cil-d70eb7e5f539"
-                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[96px] h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem]"
+                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[64px] h-[64px] xs:w-[96px] xs:h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem] xs:max-xs:right-[3rem] sm:max-lg:w-[64px] sm:max-lg:h-[64px] sm:max-lg:right-0"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1107,8 +1236,10 @@
                       </svg>
                     </a>
                   </div>
-                  <div class="relative h-10">
-                    <ul class="flex items-center gap-4">
+                  <div class="relative">
+                    <ul
+                      class="flex flex-wrap max-sm:justify-center items-center gap-4"
+                    >
                       <li
                         class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
                       >
@@ -1150,7 +1281,7 @@
                     />
                     <a
                       href="#!"
-                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[96px] h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem]"
+                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[64px] h-[64px] xs:w-[96px] xs:h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem] xs:max-xs:right-[3rem] sm:max-lg:w-[64px] sm:max-lg:h-[64px] sm:max-lg:right-0"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1167,8 +1298,10 @@
                       </svg>
                     </a>
                   </div>
-                  <div class="relative h-10">
-                    <ul class="flex items-center gap-4">
+                  <div class="relative">
+                    <ul
+                      class="flex flex-wrap max-sm:justify-center items-center gap-4"
+                    >
                       <li
                         class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
                       >
@@ -1207,7 +1340,7 @@
                     />
                     <a
                       href="#!"
-                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[96px] h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem]"
+                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[64px] h-[64px] xs:w-[96px] xs:h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem] xs:max-xs:right-[3rem] sm:max-lg:w-[64px] sm:max-lg:h-[64px] sm:max-lg:right-0"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1224,8 +1357,10 @@
                       </svg>
                     </a>
                   </div>
-                  <div class="relative h-10">
-                    <ul class="flex items-center gap-4">
+                  <div class="relative">
+                    <ul
+                      class="flex flex-wrap max-sm:justify-center items-center gap-4"
+                    >
                       <li
                         class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
                       >
@@ -1262,9 +1397,11 @@
       <div class="container" data-aos="zoom-in-down">
         <div class="pt-24">
           <div
-            class="flex justify-between items-center gap-4 pb-8 border-b border-border"
+            class="flex max-sm:flex-col justify-center sm:justify-between items-center gap-4 pb-8 border-b border-border"
           >
-            <h2 class="font-semibold text-[2.5rem]">Entre em contato!</h2>
+            <h2 class="font-semibold text-[2.5rem] max-sm:text-center">
+              Entre em contato!
+            </h2>
             <a
               target="_blank"
               href="https://wa.me/5534991163732"
@@ -1286,7 +1423,9 @@
               </svg>
             </a>
           </div>
-          <div class="grid grid-cols-4 py-12">
+          <div
+            class="max-md:flex max-md:flex-col max-md:gap-8 md:grid md:grid-cols-4 py-12"
+          >
             <div class="flex flex-col gap-8 col-span-2">
               <!-- LOGO -->
               <a href="#home" class="scroll-link flex flex-col">
@@ -1454,22 +1593,8 @@
 <!--HeadRoom (Header animations)-->
 <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
 <script src="src/js/headroom.js"></script>
-
+<!--AOS (Animations)-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script>
-  // Scroll on click
-  document.querySelectorAll(".scroll-link").forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault(); // Previne o comportamento padrão do link
-
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      // Scroll suave até o elemento alvo
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    });
-  });
-</script>
+<script src="src/js/aos.js"></script>
+<!--Hamburger-->
+<script defer src="src/js/hamburger.js"></script>
