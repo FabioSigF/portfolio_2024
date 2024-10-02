@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--OWL Slider-->
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <title>Fábio Signorini - Java Developer</title>
+  </head>
+  <body>
+    <header id="header" class="mt-4 headroom">
+      <div class="container">
+        <ul
+          class="flex items-center justify-between px-3 py-2 rounded-[50px] bg-black w-full"
+        >
+          <li>
+            <a
+              href="#home"
+              class="scroll-link px-8 py-4 bg-primary text-text_light font-semibold rounded-[60px]"
+            >
+              Início
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="scroll-link px-8 py-4 text-text_light rounded-[60px] hover:text-primary transition"
+            >
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a
+              href="#habilities"
+              class="scroll-link px-8 py-4 text-text_light rounded-[60px] hover:text-primary transition"
+            >
+              Habilidades
+            </a>
+          </li>
+
+          <!-- Logo -->
+          <a href="#home" class="flex flex-col">
+            <h1 class="font-semibold text-2xl text-text_light">SIGNORINI</h1>
+            <span class="text-xs tracking-widest text-text_light"
+              >DEVELOPER</span
+            >
+          </a>
+
+          <li>
+            <a
+              href="#portfolio"
+              class="scroll-link px-8 py-4 text-text_light rounded-[60px] hover:text-primary transition"
+            >
+              Portfólio
+            </a>
+          </li>
+          <li
+            class="px-8 py-4 text-text_light rounded-[60px] transition flex items-center"
+          >
+            <a
+              href="#contact"
+              class="scroll-link pr-8 border-r border-border mr-8 hover:text-primary transition"
+              >Contato</a
+            >
+            <ul class="flex items-center gap-8">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://wa.me/5534991163732"
+                  class="hover:text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.25em"
+                    height="1.25em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52s.198-.298.298-.497c.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/fabio-signorini/"
+                  class="hover:text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="1.5em"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2c-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3c94 0 111.28 61.9 111.28 142.3V448z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="mailto:fabiosgcontato@gmail.com"
+                  class="hover:text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.45em"
+                    height="1.45em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="container overflow-hidden">
+        <div class="flex flex-col items-center mt-8">
+          <div class="flex flex-col items-center font-semibold">
+            <h1 class="text-primary text-[5rem]" data-aos="fade-right">
+              Fábio Signorini
+            </h1>
+            <h2 class="-mt-6 text-[5rem]" data-aos="fade-left">
+              FullStack Developer
+            </h2>
+          </div>
+          <div
+            class="-mt-14 relative w-full flex justify-center"
+            data-aos="zoom-in"
+          >
+            <img src="./src/img/fabio.png" alt="Fabio Signorini" class="z-10" />
+            <div class="absolute bottom-0 w-full flex justify-center">
+              <div class="moon">
+                <div class="wave"></div>
+              </div>
+              <div
+                class="flex flex-col items-start gap-4 absolute top-0 left-0"
+              >
+                <img src="./src/img/quote-up.png" alt="" />
+                <p class="max-w-[337px] text-xl">
+                  Sou versado no desenvolvimento com
+                  <strong>Java Spring Framework</strong>, experiente em
+                  construir sites com <strong>ReactJS</strong> e metódico em
+                  <strong>Desenvolvimento Limpo</strong>.
+                </p>
+              </div>
+              <div class="absolute top-0 right-0 -mt-8 mr-4">
+                <img src="./src/img/points.png" alt="" />
+              </div>
+              <div class="absolute z-20 bottom-10">
+                <div
+                  class="overlay px-2 py-2 border border-white flex items-center gap-2 rounded-[60px]"
+                >
+                  <a
+                    href="#portfolio"
+                    class="scroll-link rounded-[60px] bg-primary hover:bg-text_dark font-medium text-xl px-6 py-3 flex gap-2 items-center"
+                  >
+                    Portfólio
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.5rem"
+                      height="1.5rem"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <button class="px-4 py-3 text-xl hover:text-primary">
+                    Contato
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="pt-24 pb-[320px]">
+          <div class="container overflow-hidden">
+            <div class="grid grid-cols-2 items-center" data-aos="zoom-out">
+              <h2 class="text-text_light">
+                Sobre <span class="text-primary">Mim</span>
+              </h2>
+              <div class="flex flex-col gap-8 text-text_light text-lg">
+                <p>
+                  Me chamo Fábio, tenho 23 anos e faço Ciência da Computação na
+                  Universidade Federal de Uberlândia (UFU).
+                </p>
+                <p>
+                  Estudo programação há quase 3 anos e tive a oportunidade de
+                  realizar projetos incríveis. Nesse tempo, desenvolvi
+                  habilidades que adoraria mostrar para você.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="habilities" class="flex flex-col items-center relative">
+        <div class="absolute -top-[210px] z-20 w-full" data-aos="fade-up">
+          <div class="flex flex-col items-center">
+            <h2 class="text-text_light mb-16 text-center">
+              Minhas <span class="text-primary">Habilidades</span>
+            </h2>
+            <div class="owl-carousel habilities_carousel">
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/java.png"
+                    alt="Java"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >Java</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/springfram.png"
+                    alt="Spring Framework"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >Spring</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/junit.png"
+                    alt="JUnit5"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >JUnit5</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/postgres.png"
+                    alt="PostgreSQL"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >PostgreSQL</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/node.png"
+                    alt="NodeJS"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >NodeJS</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/reactjs.png"
+                    alt="ReactJS"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >ReactJS</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/mysql.png"
+                    alt="My SQL"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >My SQL</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/mongo.png"
+                    alt="MongoDB"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >MongoDB</span
+                >
+              </div>
+              <div class="flex flex-col gap-2 w-[140px] bg-transparent">
+                <div
+                  class="flex items-center justify-center h-[140px] bg-bg_light rounded-[28px] border border-gray-100"
+                >
+                  <img
+                    src="./src/img/js.png"
+                    alt="Java"
+                    class="!w-[80px] h-auto"
+                  />
+                </div>
+                <span
+                  class="text-text_dark uppercase font-extralight text-sm text-center"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="flex flex-col gap-8 mt-[134px] text-lg">
+            <h3 class="font-bold text-2xl text-center">
+              “As <strong class="text-primary">soluções</strong> são criadas a
+              partir das demandas”
+            </h3>
+            <p class="font-light text-center">
+              Acredito a melhor habilidade que um desenvolvedor pode ter é saber
+              ser versátil.
+            </p>
+            <p>
+              Comecei meus estudos de programação pelo
+              <strong>Front End</strong> e em pouco tempo já desenvolvia páginas
+              em <span class="text-primary_lighter">ReactJS</span>. Para para
+              controlar estado de sistemas complexos, utilizo
+              <span class="text-primary_lighter">Redux</span>. Além disso, adoro
+              <span class="text-primary_lighter">Tailwind</span> para estilos e
+              <span class="text-primary_lighter">React Forms</span> com
+              <span class="text-primary_lighter">Zod</span> para formulários.
+            </p>
+            <p>
+              Como desafio, decidi aprender <strong>BackEnd</strong>. Hoje, essa
+              é a minha parte preferida e meu principal foco é no
+              desenvolvimento de API's com
+              <span class="text-primary_lighter">Java Spring Framework</span>.
+              Para isso, utilizo
+              <span class="text-primary_lighter">Spring Data JPA</span> para
+              gerenciar a aplicação e o banco de dados relacional (MySQL,
+              PostgreSQL), <span class="text-primary_lighter">JUnit</span> para
+              testes e outras ferramentas conforme necessário em cada projeto.
+              Também tenho alguns projetos com
+              <span class="text-primary_lighter">NodeJS</span> e
+              <span class="text-primary_lighter">MongoDB</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="py-24 overflow-hidden">
+        <div class="container" data-aos="fade-right">
+          <div>
+            <h2 class="text-text_dark mb-16 text-center">
+              Esse é o Meu<br /><span class="text-primary">Portifólio</span>
+            </h2>
+
+            <div class="owl-carousel owl-theme portfolio_carousel">
+              <div class="w-full">
+                <div class="grid grid-cols-2 gap-6 h-[370px] w-full mb-20">
+                  <div
+                    class="portfolio_one_front rounded-[20px] relative overflow-hidden w-full"
+                  >
+                    <div class="portfolio_bg">
+                      <div class="portfolio_bg_content">
+                        <h3 class="text-white font-semibold text-2xl">
+                          Página Inicial do Dashboard
+                        </h3>
+                        <h2 class="text-white font-semibold text-5xl">
+                          Loja de Uniformes - Admin
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio_one_back rounded-[20px] relative overflow-hidden w-full"
+                  >
+                    <div class="portfolio_bg">
+                      <div class="portfolio_bg_content">
+                        <h3 class="text-white font-semibold text-2xl">
+                          Página de Cadastro de Empresa
+                        </h3>
+                        <h2 class="text-white font-semibold text-5xl">
+                          Loja de Uniformes - Admin
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                  <ul class="flex items-center justify-center gap-4">
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      Java Spring Framework
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      JPA
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      PostgreSQL
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      ReactJS
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      JUnit5
+                    </li>
+                  </ul>
+                  <div class="flex flex-col items-center gap-8">
+                    <div class="flex gap-4 items-center justify-center">
+                      <h3 class="text-4xl text-text_dark font-semibold">
+                        Loja de Uniformes - Dashboard Admin
+                      </h3>
+                      <a
+                      target="_blank"
+                      href="https://github.com/FabioSigF/admin_loja_uniformes"
+                        class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="0.97em"
+                          height="1em"
+                          viewBox="0 0 496 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                      target="_blank"
+                      href="#!"
+                        class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5rem"
+                          height="1.5rem"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="text-center w-[60%] text-lg">
+                      Esse é o projeto de um dashboard administrativo para uma
+                      Loja de Uniformes. Ela foi criada para atender a demanda
+                      da
+                      <a
+                        href="#!"
+                        class="text-primary font-semibold hover:text-primary_hover"
+                        >Silvana Uniformes</a
+                      >. <br /><br />
+                      Seu Backend foi desenvolvido em
+                      <strong>Java com Spring Framework</strong> para criação da
+                      API, <strong>JPA</strong> para persistência de dados e
+                      <strong>PostgreSQL</strong> como banco de dados.
+                      <br /><br />
+                      A API possui sistema de autenticação e autorização
+                      (<strong> Spring Security </strong>), testes unitários com
+                      <strong>JUnit5</strong> e documentação com Swagger.
+                      <br /><br />
+                      O sistema permite ao usuário cadastrar empresas, produtos
+                      e usuários. Além disso, é possível visualizar, editar e
+                      excluir esses dados. Por fim, também tem um sistema de
+                      relatórios para acompanhar e medir todos os dados
+                      relevantes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="grid grid-cols-2 gap-6 h-[370px] w-full mb-20">
+                  <div
+                    class="portfolio_two_front rounded-[20px] relative overflow-hidden w-full"
+                  >
+                    <div class="portfolio_bg">
+                      <div class="portfolio_bg_content">
+                        <h3 class="text-white font-semibold text-2xl">
+                          Página Inicial
+                        </h3>
+                        <h2 class="text-white font-semibold text-5xl">
+                          Auto Club - Since 2023
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio_two_back rounded-[20px] relative overflow-hidden w-full"
+                  >
+                    <div class="portfolio_bg">
+                      <div class="portfolio_bg_content">
+                        <h3 class="text-white font-semibold text-2xl">
+                          Página do Veículo
+                        </h3>
+                        <h2 class="text-white font-semibold text-5xl">
+                          Auto Club - Since 2023
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                  <ul class="flex items-center justify-center gap-4">
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      React JS
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      JavaScript
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      Google Firebase
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      API
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      Autenticação e Autorização
+                    </li>
+                  </ul>
+                  <div class="flex flex-col items-center gap-8">
+                    <div class="flex gap-4 items-center justify-center">
+                      <h3 class="text-4xl text-text_dark font-semibold">
+                        Auto Cars - Aluguel e Venda de Carros
+                      </h3>
+                      <a
+                      target="_blank"
+                      href="https://github.com/FabioSigF/carshopping"
+                        class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="0.97em"
+                          height="1em"
+                          viewBox="0 0 496 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                      target="_blank"
+                      href="https://carshopping.vercel.app/?vercelToolbarCode=XqbEx3TGphqyKo4"
+                        class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5rem"
+                          height="1.5rem"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="text-center w-[60%] text-lg">
+                      O projeto Auto Club é uma aplicação de aluguel e venda de
+                      carros, onde o usuário pode visualizar os carros
+                      disponíveis, alugar e comprar. <br />
+                      <br />Ele foi desenvolvido com <strong>ReactJS</strong> e
+                      <strong>Google Firebase</strong>. <br />
+                      <br />A plataforma possui autenticação e autorização de
+                      usuário, cadastro de carros, aluguel e compra de veículos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="grid grid-cols-2 gap-6 h-[370px] w-full mb-20">
+                  <div
+                    class="portfolio_three_front rounded-[20px] relative overflow-hidden w-full"
+                  >
+                    <div class="portfolio_bg">
+                      <div class="portfolio_bg_content">
+                        <h3 class="text-white font-semibold text-2xl">
+                          Página de Artigo
+                        </h3>
+                        <h2 class="text-white font-semibold text-5xl">
+                          Behold Travel
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio_three_back rounded-[20px] relative overflow-hidden w-full"
+                  >
+                    <div class="portfolio_bg">
+                      <div class="portfolio_bg_content">
+                        <h3 class="text-white font-semibold text-2xl">
+                          Página de Criação de Artigo
+                        </h3>
+                        <h2 class="text-white font-semibold text-5xl">
+                          Behold Travel
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                  <ul class="flex items-center justify-center gap-4">
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      React JS
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      Google Firebase
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      JavaScript
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      API
+                    </li>
+                    <li
+                      class="px-8 py-3 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                    >
+                      Autenticação e Autorização
+                    </li>
+                  </ul>
+                  <div class="flex flex-col items-center gap-8">
+                    <div class="flex gap-4 items-center justify-center">
+                      <h3 class="text-4xl text-text_dark font-semibold">
+                        Behold Travel - Blog de Viagens
+                      </h3>
+                      <a
+                      target="_blank"
+                      href="https://github.com/FabioSigF/travelblog"
+                        class="rounded-[60px] bg-text_dark hover:bg-primary_lighter transition text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="0.97em"
+                          height="1em"
+                          viewBox="0 0 496 512"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                      target="_blank"
+                      href="https://travelblog-lyart.vercel.app/?vercelToolbarCode=akk8reYXqAIKsH4"
+                        class="rounded-[60px] bg-primary hover:bg-text_dark text-white font-medium text-xl w-[58px] h-[58px] flex gap-2 items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5rem"
+                          height="1.5rem"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="text-center w-[60%] text-lg">
+                      Behold Travel é um blog onde qualquer pessoa pode criar
+                      artigos descrevendo sobre suas aventuras! O projeto foi
+                      desenvolvido em <strong>ReactJS</strong> e
+                      <strong>Google Firebase</strong>. <br /><br />
+                      Ele possui sistema de autenticação e autorização, o
+                      usuário logado pode criar, editar e excluir seus artigos.
+                      <br /><br />
+                      Além disso, o usuário pode deixar comentários em outros
+                      artigos e visualizar os artigos de outros usuários. Os
+                      artigos mais recentes são exibidos na página inicial.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="bar">
+        <div class="relative bg-primary overflow-hidden h-[104px]">
+          <div
+            class="bg-white relative -rotate-3 w-full h-[53px] mt-[40px] inline-block"
+          >
+            <ul
+              class="text_bar_1 flex items-center gap-8 bg-white py-2 px-2 absolute left-0 top-0"
+            >
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Java Spring Framework</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Bancos de Dados</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Desenvolvimento de API</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap">ReactJS</span>
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Java Spring Framework</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Bancos de Dados</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Desenvolvimento de API</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap">ReactJS</span>
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+            </ul>
+            <ul
+              class="text_bar_2 flex items-center gap-8 bg-white py-2 px-2 absolute left-0 top-0"
+            >
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Java Spring Framework</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Bancos de Dados</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Desenvolvimento de API</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap">ReactJS</span>
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Java Spring Framework</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Bancos de Dados</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap"
+                  >Desenvolvimento de API</span
+                >
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+              <li class="flex items-center gap-8">
+                <span class="text-2xl text-text_dark text-nowrap">ReactJS</span>
+                <svg
+                  width="34"
+                  height="35"
+                  viewBox="0 0 34 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2748 0.512377L21.507 12.5955L34.0002 16.7547L21.917 21.9868L17.7579 34.48L12.5257 22.3969L0.0325452 18.2377L12.1157 13.0055L16.2748 0.512377Z"
+                    fill="#FD853A"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="py-24 overflow-hidden">
+        <div class="container" data-aos="fade-left">
+          <div class="">
+            <div class="flex items-center justify-between">
+              <h2 class="text-text_dark">
+                Também escrevo alguns
+                <span class="text-primary">Artigos</span>
+              </h2>
+              <a
+                href="https://medium.com/@fabiosignorini19"
+                target="_blank"
+                class="rounded-[60px] bg-primary hover:bg-text_dark border border-primary hover:border-white text-white font-medium text-xl px-6 py-3"
+              >
+                Ver Todos
+              </a>
+            </div>
+            <ul class="grid grid-cols-3 gap-12 mt-8">
+              <li>
+                <article class="flex flex-col gap-4">
+                  <div class="relative">
+                    <img
+                      src="./src/img/blog_01.png"
+                      alt="Modelo e Diagrama Entidade Relacionamento (MER e DER) de forma fácil"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://medium.com/@fabiosignorini19/modelo-e-diagrama-entidade-relacionamento-mer-e-der-de-forma-f%C3%A1cil-d70eb7e5f539"
+                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[96px] h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="relative h-10">
+                    <ul class="flex items-center gap-4">
+                      <li
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                      >
+                        Bancos de Dados
+                      </li>
+                      <li
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                      >
+                        Modelagem de Dados
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center gap-8">
+                    <div class="blog_item_details">
+                      <span class="ml-4">Fábio Signorini</span>
+                    </div>
+                    <div class="blog_item_details">
+                      <span class="ml-4">02 Oct, 2024</span>
+                    </div>
+                  </div>
+                  <a
+                    target="_blank"
+                    href="https://medium.com/@fabiosignorini19/modelo-e-diagrama-entidade-relacionamento-mer-e-der-de-forma-f%C3%A1cil-d70eb7e5f539"
+                    class="text-text_dark hover:text-primary"
+                  >
+                    <h3 class="text-xl font-semibold">
+                      Modelo e Diagrama Entidade Relacionamento (MER e DER) de
+                      forma fácil
+                    </h3>
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article class="flex flex-col gap-4">
+                  <div class="relative">
+                    <img
+                      src="./src/img/blog_comingsoon.png"
+                      alt="TDD - Test Driven Development para desenvolvimento de API's"
+                    />
+                    <a
+                      href="#!"
+                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[96px] h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="relative h-10">
+                    <ul class="flex items-center gap-4">
+                      <li
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                      >
+                        Testes Unitários
+                      </li>
+                      <li
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                      >
+                        Desenvolvimento de API
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center gap-8">
+                    <div class="blog_item_details">
+                      <span class="ml-4">Fábio Signorini</span>
+                    </div>
+                    <div class="blog_item_details">
+                      <span class="ml-4">07 Oct, 2024</span>
+                    </div>
+                  </div>
+                  <a href="#!" class="hover:text-primary text-text_dark">
+                    <h3 class="text-xl font-semibold">
+                      TDD - Test Driven Development para desenvolvimento de
+                      API's"
+                    </h3>
+                  </a>
+                </article>
+              </li>
+
+              <li>
+                <article class="flex flex-col gap-4">
+                  <div class="relative">
+                    <img
+                      src="./src/img/blog_comingsoon.png"
+                      alt="Modelagem de Bancos de Dados com MER e DER"
+                    />
+                    <a
+                      href="#!"
+                      class="rounded-full hover:bg-primary bg-text_dark text-white font-medium w-[96px] h-[96px] flex gap-2 items-center justify-center absolute bottom-0 right-[.8rem]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="relative h-10">
+                    <ul class="flex items-center gap-4">
+                      <li
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                      >
+                        Bancos de Dados
+                      </li>
+                      <li
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 transition text-text_dark rounded-3xl"
+                      >
+                        Modelagem de Dados
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center gap-8">
+                    <div class="blog_item_details">
+                      <span class="ml-4">Fábio Signorini</span>
+                    </div>
+                    <div class="blog_item_details">
+                      <span class="ml-4">14 Oct, 2024</span>
+                    </div>
+                  </div>
+                  <a href="#!" class="hover:text-primary text-text_dark">
+                    <h3 class="text-xl font-semibold">
+                      Modelagem de Bancos de Dados com MER e DER
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="bg-bg_dark_lighter text-white">
+      <div class="container" data-aos="zoom-in-down">
+        <div class="pt-24">
+          <div
+            class="flex justify-between items-center gap-4 pb-8 border-b border-border"
+          >
+            <h2 class="font-semibold text-[2.5rem]">Entre em contato!</h2>
+            <a
+              target="_blank"
+              href="https://wa.me/5534991163732"
+              class="rounded-[60px] bg-primary hover:bg-text_dark border border-primary hover:border-white font-medium text-xl px-5 py-3 flex gap-2 items-center"
+            >
+              Contato Pessoal
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="grid grid-cols-4 py-12">
+            <div class="flex flex-col gap-8 col-span-2">
+              <!-- LOGO -->
+              <a href="#home" class="scroll-link flex flex-col">
+                <h1 class="font-semibold text-2xl text-text_light">
+                  SIGNORINI
+                </h1>
+                <span class="text-xs tracking-widest text-text_light"
+                  >DEVELOPER</span
+                >
+              </a>
+              <p class="max-w-[500px]">
+                Obrigado por chegar até aqui! Estou em busca de oportunidades
+                como desenvolver FullStack ou Java, será um prazer trabalhar com
+                você!
+              </p>
+              <ul class="flex items-center gap-8">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://wa.me/5534991163732"
+                    class="hover:text-primary"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="1.5em"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222c0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222c0-59.3-25.2-115-67.1-157m-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4l-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2c0-101.7 82.8-184.5 184.6-184.5c49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6m101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18c-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4c-32.6-16.3-54-29.1-75.5-66c-5.7-9.8 5.7-9.1 16.3-30.3c1.8-3.7.9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5c-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8c35.2 15.2 49 16.5 66.6 13.9c10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/fabio-signorini/"
+                    class="hover:text-primary"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="1.5em"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2c-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3c94 0 111.28 61.9 111.28 142.3V448z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="mailto:fabiosgcontato@gmail.com"
+                    class="hover:text-primary"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.45em"
+                      height="1.45em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span class="font-semibold text-primary">Navegação</span>
+              <ul class="flex flex-col gap-2 mt-2">
+                <li>
+                  <a
+                    href="#home"
+                    class="scroll-link text-sm hover:text-primary_lighter"
+                    >Início</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="scroll-link text-sm hover:text-primary_lighter"
+                    >Sobre Mim</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#habilities"
+                    class="scroll-link text-sm hover:text-primary_lighter"
+                    >Habilidades</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="scroll-link text-sm hover:text-primary_lighter"
+                    >Portfólio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="scroll-link text-sm hover:text-primary_lighter"
+                    >Meus Artigos</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span class="font-semibold text-primary">Contato</span>
+              <ul class="flex flex-col gap-2 mt-2">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://wa.me/5534991163732"
+                    class="text-sm hover:text-primary_lighter"
+                    >+55 34 99116-3732</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="mailto:fabiosgcontato@gmail.com"
+                    class="text-sm hover:text-primary_lighter"
+                    >fabiosgcontato@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/fabio-signorini/"
+                    class="text-sm hover:text-primary_lighter"
+                    >linkedin.com/in/fabio-signorini</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-t border-border py-4 text-center">
+            Copyright© 2024
+            <strong class="text-primary">Fábio Signorini</strong>. Todos os
+            direitos reservados.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Owl Carousel JS Custom -->
+<script src="src/js/owlslider.js"></script>
+
+<!--HeadRoom (Header animations)-->
+<script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+<script src="src/js/headroom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  // Scroll on click
+  document.querySelectorAll(".scroll-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // Previne o comportamento padrão do link
+
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      // Scroll suave até o elemento alvo
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
