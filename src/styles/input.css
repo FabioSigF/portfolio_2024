@@ -274,10 +274,10 @@ body {
 }
 
 .portfolio_one_front {
-  background: url("../img/portfolio_ex.jpg") no-repeat center center/cover;
+  background: url("../img/lojaadmin_1.png") no-repeat center center/cover;
 }
 .portfolio_one_back {
-  background: url("../img/portfolio_ex.jpg") no-repeat center center/cover;
+  background: url("../img/lojaadmin_2.png") no-repeat center center/cover;
 }
 .portfolio_two_front {
   background: url("../img/portfolio_cars_1.jpg") no-repeat center center/cover;
